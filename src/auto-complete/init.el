@@ -29,14 +29,36 @@
   (insert "&"))
 
 (global-set-key "&" 'c-electric-esperluette)
-(add-to-list 'ac-non-trigger-commands 'c-electric-esperluette)
 
 (defun c-electric-space ()
   (interactive)
   (insert " "))
 
 (global-set-key " " 'c-electric-space)
-(add-to-list 'ac-non-trigger-commands 'c-electric-space)
 
+(defun c-electric-equal ()
+  (interactive)
+  (insert "="))
+
+(global-set-key "=" 'c-electric-equal)
+
+(defun c-electric-minus ()
+  (interactive)
+  (insert "-"))
+
+(global-set-key "-" 'c-electric-minus)
+
+(add-to-list 'ac-non-trigger-commands 'c-electric-esperluette)
+(add-to-list 'ac-non-trigger-commands 'c-electric-space)
 (add-to-list 'ac-non-trigger-commands 'c-electric-star)
 (add-to-list 'ac-non-trigger-commands 'c-electric-semi&comma)
+(add-to-list 'ac-non-trigger-commands 'c-electric-lt-gt)
+(add-to-list 'ac-non-trigger-commands 'c-electric-paren)
+(add-to-list 'ac-non-trigger-commands 'c-electric-slash)
+(add-to-list 'ac-non-trigger-commands 'c-electric-colon)
+(add-to-list 'ac-non-trigger-commands 'c-electric-brace)
+(add-to-list 'ac-non-trigger-commands 'autopair-backspace)
+(add-to-list 'ac-non-trigger-commands 'autopair-skip-close-maybe)
+(add-to-list 'ac-non-trigger-commands 'ac-clang-async-autocomplete-autotrigger)
+(add-to-list 'ac-non-trigger-commands 'c-electric-equal)
+(add-to-list 'ac-non-trigger-commands 'c-electric-minus)

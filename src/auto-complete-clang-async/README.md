@@ -3,7 +3,7 @@
 
 ## Customize your completion:
 
-If you have custom includes paths or flags you want to give to the completion serveur,
+If you have custom includes paths or flags you want to give to the completion server,
 you can do that by setting up a project.
 A typical project structure is done like this:
 
@@ -19,14 +19,14 @@ A typical project structure is done like this:
 	    |-- main.c
 	    `-- test.c
 
-The .emacsproject identify the root of your project.
+To do so create a directory .emacsproject located at the root of your project.
 The flags and includes files are used to configure your project.
 
-An example of flags content:
+An example of flags file content:
 
 	-std=c++11
 
-An example of includes content:
+An example of includes file content:
 
 	include/
 	/usr/include/SFML

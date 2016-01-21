@@ -35,4 +35,4 @@
 		   (updater--write-new-time)))
 	))))
 
-(conf:verify-update)
+;; (conf:verify-update)
